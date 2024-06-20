@@ -6,11 +6,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package list and install necessary packages
 RUN apt-get update && \
-    apt-get install -y openssh-server sudo \
-    apt-get install python3-pip \
-    pip3 install azure-identity azure-keyvault-secrets mysql-connector-python pandas \
-    apt install vim \
-    apt install mysql-server
+    apt-get install -y openssh-server sudo 
+#    apt-get install python3-pip \
+#    pip3 install azure-identity azure-keyvault-secrets mysql-connector-python pandas \
+#    apt install vim \
+#    apt install mysql-server
 
 # Create a directory for the SSH daemon to run
 RUN mkdir /var/run/sshd
