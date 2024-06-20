@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package list and install necessary packages
 RUN apt-get update && \
-    apt-get install -y openssh-server sudo 
+    apt-get install -y openssh-server sudo \
     apt-get install python3-pip \
     pip3 install azure-identity azure-keyvault-secrets mysql-connector-python pandas \
     apt install vim \
