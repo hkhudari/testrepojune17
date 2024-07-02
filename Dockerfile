@@ -7,6 +7,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Update package list and install necessary packages
 RUN apt-get update && \
     apt-get install -y openssh-server sudo && \ 
+    apt install -y curl && \
+    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash && \
     apt install -y mysql-server && \
     apt-get install -y python3-pip && \
     apt install -y vim && \
