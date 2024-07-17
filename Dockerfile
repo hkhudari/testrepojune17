@@ -1,4 +1,4 @@
-LABEL "from"="https://github.com/hkhudari/testrepojune17/edit/main/Dockerfile#L4C42"
+RUN echo "https://github.com/hkhudari/testrepojune17/"
 
 # Use the official Ubuntu image
 FROM ubuntu:20.04
