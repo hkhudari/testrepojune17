@@ -1,5 +1,3 @@
-RUN echo "https://github.com/hkhudari/testrepojune17/"
-
 # Use the official Ubuntu image
 FROM ubuntu:20.04
 
@@ -31,6 +29,9 @@ RUN echo 'root:password' | chpasswd
 
 # Expose port 80 for SSH
 EXPOSE 80
+
+# Simply print 
+RUN echo "https://github.com/hkhudari/testrepojune17/"
 
 # Start the SSH service
 CMD ["/usr/sbin/sshd", "-D"]
